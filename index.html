@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Code Editor |By Prahalad Singh</title>
+</head>
+<body>
+   <header>
+    <div class="container row">
+        <div class="brand">
+        <div class="logo"></div>
+        <div class="title">Html, Css and JavaScript Browser Code Editor</div>
+        </div>
+    </div>
+    <div class="row">
+        <button class="btn secondary" id="saveBtn" title="Save the work localy"><span>Save</span></button>
+        <button class="btn secondary" id="loadBtn" title="Load work which you have saved"><span>Load</span></button>
+        <input type="file" id="openfile" accept="application/json" hidden>
+    </div>
+   </header>
+   
+   
+   <main>
+    <aside class="card panel stack">
+        <h2>Task /Assingment</h2>
+        <textarea class="text" id="assingment" placeholder="Write a task discription here...."></textarea>
+        <div class="stack">
+            <label for="testArea">JValidation Test (avaScript only - optional)</label>
+            <textarea class="text" id="testArea" placeholder="Write a test to append after the user check the solution."></textarea>
+        </div>
+        <div class="muted">
+            Tip: <span class="kbd">Ctrl</span> + <span class="kbd">S</span> to save, <span class="kbd">Ctrl</span> + <span class="kbd">Enter</span> to run.
+        </div>
+    </aside>
+    <section class="stack" id="web-only">
+        <div class="stack panel card" id="webEditors">
+            <div class="row">
+                <h2>HTML / CSS / JS</h2>
+                <div class="row">
+                    <button class="btn ok" id="runWeb">Run</button>
+                    <button class="btn secondary" id="openPreview">Open preview in window</button>
+                </div>
+            </div>
+            <div class="tabs" id="webTabs" role="tablist" aria-label="Web Editor">
+                <button class="tab active" role="tab" aria-selected="true" tabindex="0" data-pane="html">HTML</button>
+                <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-pane="ss">CSS</button>
+                <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-pane="JavaScript">JavaScript</button>
+            </div>
+        </div>
+    </section>
+   </main>
+
+</body>
+</html>
